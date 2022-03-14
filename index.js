@@ -150,6 +150,10 @@ function _displayItems(data) {
 
     let td9 = tr.insertCell();
     td9.appendChild(deleteButton);
+
+    let td10 = tr.insertCell();
+    let textNode10 = document.createTextNode(`${item.id}-website`);
+    td10.appendChild();
   });
 
   bookings = data;
