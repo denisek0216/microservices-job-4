@@ -1,9 +1,9 @@
-const uri = 'api/bookings';
+const uri = 'https://localhost:7071/api/bookings';
 
 let bookings = [];
 
 function getBookings() {
-  fetch(uri)
+  fetch(uri, {mode:'no-cors'})
     .then(response => response.json())
     .then(data => _displayItems(data))
     .catch(error => console.error('Unable to get bookings.', error));
